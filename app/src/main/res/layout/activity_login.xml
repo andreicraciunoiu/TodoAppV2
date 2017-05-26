@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background_image_for_loginapp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="home.example.projects.loginapp.LoginActivity">
+
+
+        <TextView
+            android:id="@+id/hello_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/text_color_white"
+            android:text="@string/welcome"
+            android:textSize="50sp" />
+
+
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hello_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="47dp"
+            android:hint="@string/log_in_username"
+            android:textColor="@color/text_color_white"
+            android:backgroundTint="@color/text_color_white"
+            android:textColorHint="@color/text_color_white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/user_id"
+            android:layout_alignStart="@+id/user_id"
+            android:layout_below="@+id/user_id"
+            android:hint="@string/log_in_password"
+            android:backgroundTint="@color/text_color_white"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color_white"
+            android:textColorHint="@color/text_color_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/user_password"
+            android:layout_alignStart="@+id/user_password"
+            android:layout_below="@+id/user_password"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/sign_in_button"
+            android:text="@string/login_button_text"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_in_button"
+            android:layout_centerHorizontal="true"
+            android:padding="22dp"
+            android:text="@string/register"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</ScrollView>

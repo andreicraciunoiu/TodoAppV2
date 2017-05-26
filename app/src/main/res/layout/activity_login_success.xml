@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_background_image_for_loginapp"
+    tools:context="home.example.projects.loginapp.LoginSuccessActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome_user_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome_user"
+            android:textColor="@color/text_color_white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/login_success_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/email"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_with_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/write_task"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:backgroundTint="@color/text_color_white"
+                android:textColorHint="@color/text_color_white"
+                android:textColor="@color/text_color_white"
+                android:hint="@string/enter_task_name" />
+
+            <Button
+                android:id="@+id/button_add_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_in_button"
+                android:textColor="@color/text_color_white"
+                android:text="@string/add_task_button" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_margin="8dp"
+            android:id="@+id/list_of_tasks"
+            android:layout_width="match_parent"
+            android:background="#90FFFFFF"
+            android:textColor="@color/text_color_white"
+            android:layout_height="250dp" />
+
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/sign_in_button"
+            android:text="@string/logout_button_text"
+            android:textColor="@color/text_color_white" />
+
+    </LinearLayout>
+</ScrollView>

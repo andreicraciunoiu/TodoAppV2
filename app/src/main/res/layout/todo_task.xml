@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This activity should've been used to tell the task adapter how a task should look in the task list-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/todo_task"
+        android:layout_margin="8dp"
+        android:textColor="@color/button_text_color"
+        android:layout_weight="2"/>
+
+    <Button
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:background="@drawable/sign_in_button"
+        android:id="@+id/done_button"
+        android:textColor="@color/text_color_white" />
+</LinearLayout>
